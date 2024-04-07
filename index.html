@@ -9,20 +9,28 @@
   </head>
   <body>
     <section class="card">
-      <img
-        class="card__image"
-        width="300px"
-        src="images/image-product-desktop.jpg"
-        alt="perfume-image"
-      />
+      <picture>
+        <source
+          srcset="./images/image-product-desktop.jpg"
+          media="(min-width: 600px)"
+        />
+        <img
+          class="card__image"
+          src="images/image-product-mobile.jpg"
+          alt="perfume-image"
+        />
+      </picture>
       <section class="card__info">
-        <h3>PERFUME</h3>
-        <h1>Gabrielle Essence De Parfum</h1>
+        <h3 class="card__details">PERFUME</h3>
+        <h1 class="card__title">Gabrielle Essence De Parfum</h1>
         <p class="card__paragraph">
           A floral, solar and voluptuous interpretation composed by Oliver
           Polge, Perfumer-Creator for the House of Chanel
         </p>
-        <div>149.99 169.99</div>
+        <div class="card__price">
+          <span class="card__current-price">149.99</span>
+          <span class="card__old-price"> 169.99 </span>
+        </div>
         <button class="card__button">
           <svg width="15" height="16" xmlns="http://www.w3.org/2000/svg">
             <path
